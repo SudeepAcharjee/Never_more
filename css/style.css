@@ -1054,3 +1054,7 @@ body {
 a {
   color: rgb(255, 255, 255);
 }
+.dis {
+  height: 0%;
+  border: none;
+}
