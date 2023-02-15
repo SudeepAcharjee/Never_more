@@ -1058,3 +1058,15 @@ a {
   height: 0%;
   border: none;
 }
+p {
+  text-size-adjust: 30%;
+  text-decoration-color: rgb(255, 249, 249);
+  color: rgb(255, 254, 254);
+}
+h1 {
+  text-size-adjust: 50%;
+  color: rgb(75, 78, 255);
+}
+h2 {
+  color: rgb(75, 78, 255);
+}
