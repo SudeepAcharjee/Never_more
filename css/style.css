@@ -228,6 +228,10 @@ button {
   float: left;
   width: 30%;
 }
+.logonew {
+  float: left;
+  width: 10%;
+}
 .header_section {
   width: 100%;
   float: right;

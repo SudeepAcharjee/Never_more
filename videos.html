@@ -1,12 +1,205 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="login.css" />
+    <script src="login.js"></script>
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <!-- site metas -->
     <title>Never-More</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- owl carousel style -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css"
+    />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+    <!-- Tweaks for older IEs-->
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- owl stylesheets -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen"
+    />
+
+
+
+    <style>
+     .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000000;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.dropdown-btn:hover {
+  color: #000000;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #000000;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  
+}
+
+    </style>
+
+
+
+
+
+
+
   </head>
   <body>
-    Will be available soon
+    <div class="header_section">
+      <div class="header_bg">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="logonew" href="../index.html"
+              ><img src="images/log-removebg-preview.png"
+            /></a>
+            <div
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="home(after-login).html">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <button class="dropdown-btn">Front-End
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                  <a href="#">Internet</a><br>
+                  <a href="#">HTML</a><br>
+                  <a href="#">CSS</a><br>
+                 <a href="#">Javascript</a><br>
+                  <a href="#">GIT</a><br>
+                </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">Back-end</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="mailto:sudeepacharjee@gmail.com"
+                    >DevOps</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../About.html">Android</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../About.html">DBA</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../About.html">Blockchain</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="../About.html">Flutter</a>
+                </li>
+                <li class="nav-item">
+                <button class="dropdown-btn">Others
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                  <a href="#">QA</a><br>
+                  <a href="#">Software Architect</a><br>
+                  <a href="#">ASP.NET.Core</a><br>
+                 <a href="#">Cyber Security</a><br>
+                  <a href="#">React Native</a><br>
+                </div>
+              
+                </li>
+              </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- javascript -->
+    <script src="js/owl.carousel.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
   </body>
 </html>
