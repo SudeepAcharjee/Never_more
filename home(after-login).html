@@ -32,6 +32,55 @@
       <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <style>
+         .dropdown-btn {
+      padding: 6px 8px 6px 35px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #000000;
+      display: block;
+      border: none;
+      background: none;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+    }
+    
+    /* On mouse-over */
+    /* .dropdown-btn:hover {
+      color: #000000;
+    } */
+    
+    /* Main content */
+    .main {
+      margin-left: 200px; /* Same as the width of the sidenav */
+      font-size: 20px; /* Increased text to enable scrolling */
+      padding: 0px 10px;
+    }
+    
+    /* Add an active class to the active dropdown button */
+    
+    
+    /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+    .dropdown-container {
+      display: none;
+      background-color: #00000000;
+      padding-left: 40px;
+    }
+    
+    /* Optional: Style the caret down icon */
+    .fa-caret-down {
+      float: right;
+      padding-right: 8px;
+    }
+    
+    /* Some media queries for responsiveness */
+    @media screen and (max-height: 450px) {
+      
+    }
+    
+        </style>
    </head>
    <body>
       <!--header section start -->
@@ -40,14 +89,14 @@
             <div class="container">
                <nav class="navbar navbar-expand-lg navbar-light bg-light">
                
-                  <a class="logo" href="index.html"><img src="images/banner-bg.png"></a>
+                  <a class="logo" href="index.html"><img src="images/log-removebg-preview.png"></a>
                   <div class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                   </div>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                      <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                           <a class="nav-link" href="index.html">Home</a>
+                           <a class="nav-link" href="index.html">LogOut</a>
                         </li>
                         <li class="nav-item">
                         <a class="nav-link" href="#course">Courses</a>
@@ -56,17 +105,25 @@
                            <a class="nav-link" href="videos.html">Videos</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="exercise.html">Exercise</a>
+                           <a class="nav-link" href="About.html">About</a>
                         </li>
+                        
                         <li class="nav-item">
-                           <a class="nav-link" href="About.html">About Us</a>
+                           <button class="dropdown-btn">  Roadmaps
+                  <!-- <i class="fa fa-caret-down"></i> -->
+                </button>
+                     <div class="dropdown-container">
+                      <a href="#">1.Web-Basics</a><br>
+                        <a href="./Roadmap/Frontend.html">2.Front-End</a><br>
+                         <a href="./Roadmap/Backend.html">3.Back-end</a><br>
+                            </div>
                         </li>
                         
                      </ul>
                      <div class="call_section">
                         <ul>
                            
-                           <li><a href="https://discord.gg/HRPgbd7F"><img src="images/fb-icon.png" height="15px" width="30px"></a></li>
+                           <li><a href="https://discord.gg/HRPgbd7F"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADGUlEQVR4nO2Y24tNURzHP4aOS00ZEyM8i3GJGXlQLk8kt/DAEw+i5k3UuJQX+QMw5smkXPJAIY08umZQBgfFFDKDTMYIQw5mllb9Tu322WvvtdfZZ2y1v/WtmX3W7/v7ffdee+21fpAhQ4YMGf4zTAd2AMeBTuArcB0YYRGrx1yTmE7R0Fpac1gwFTgAdAHKwwJwGzgC1FjojAcOS0zBp/VCcuhciWMScAz46Umo/z4LrAeqy9CuFg2t5ddvldyJYDXQ60nQD+wFan3jZgPbgBagHXgmY/8I++Vau4zRY2f5NGpFu9+Tr1dqKAuLgF8e0Rbf1Fkgd63bNz3isFuedqNHt0aueZ/OQlcTI+UOFsV+Azn5bQVwv4ziTbwHLJccOXmSxd8eAlUuRrYEJNIrzc0KGPDzFnAj4PomFyP5YSg4LjvjmliSgqKVgbHeldMpKFgZ2GZrYgzwJQUFKwM/A6NtjGxIQbEqgmtsjJxJQaEqgiejTFT5vuJp5YeozWlDCopUlpwbZmSPg+AdYJ68gPOBjgrFKB93hxm5HFPskWfbUoT+/3HCMSqAF8KMvE9o9ViXcIwKYI/JxDSHx2s6K0xMOEYZOCVIaK2DUJ2hqLqEY5SBgeeUXQ5C2nzcaeISowzcGSTU6iBkenHzCccoA/VBrwRXHYSULJ0NskfTp7y7FYpRAbwSZOSpo9i/ZD7IyJsUFKZi8nWQkU8hAUNyZh4cxiIH5SM5FDKmL8iIv1Hmpe4EaiwNaM5Vgl3AMsnZFjJO11yCByEBT4DJMm6UtDd7KmCgB9guOZCcYe+urrkEM4GBkKCP0lkpbp/1hm8jcCkiLorfgItyoMuJts6xVaZOWNwMDFhlUVRe2jLeHlNOpkIzcEKW15dSSEHYJ9c6ZEyzTNWcr5e22eKbok2sJAKNshpE3cm3wFFgsWvjTFAlXRut9c4i7yv5BllhHHAI+G4h/AOoL8NIvWhE5dEz5SAw1iWJbirvl1a/KUET5aMpRP85sA+YQEKYI5u087K+D9g0AWLglGhq7XOSS3f4M2TIkCFDhgxY4i+D3DCoZ+v6igAAAABJRU5ErkJggg==" height="15px" width="30px"></a></li>
 
                            <li><a href="https://twitter.com/NeverMore0401?t=3E6On73my3kD7mU6YvQC7Q&s=09"><img src="images/twitter-icon.png"></a></li>
                            <li><a href="https://www.linkedin.com/in/never-more-b87264266/"><img src="images/linkedin-icon.png"></a></li>
@@ -78,21 +135,29 @@
                </nav>
             </div>
          </div>
-               <p class="banner_text"></p>
+               <!-- <p class="banner_text"></p>
                               <div class="btn_main"> 
-                                 <div class="about_bt "><a href="sign-up/index1.html">Sign-up</a></div>
-                                 <div class="quote_bt"><a href="login/login page.html">Login</a></div>
+                                 <div class="about_bt "><a href="index.html">Log-out</a></div>
+                                 <div class="quote_bt">
+                                    <button class="dropdown-btn">Roadmaps
+                                      <i class="fa fa-caret-down"></i>
+                                    </button>
+                <div class="dropdown-container">
+                   <a href="#">Web-Basics</a><br>
+                  <a href="./Roadmap/Frontend.html">Front-End</a><br>
+                  <a href="./Roadmap/Backend_files/">Back-end</a><br>
+                </div>
                                  <div> <br></div>
                               </div>
-                           </div>
+                           </div> -->
+                           <!-- <div><br><br><br></div>
                            <div><br><br><br></div>
-                           <div><br><br><br></div>
-                        <div class="Link_bt"><a href=".//Roadmap/explore.html">Explore Path</a></div>
+                        -->
    <!--banner section end -->
-      </div>
+      <!-- </div> -->
       <!--header section end -->
       <!-- services section start -->
-      <div class="services_section layout_padding">
+      <!-- <div class="services_section layout_padding"> -->
          <div class="container">
             <h1 class="services_taital" id="course"><span style="color: #fcce2d">Our</span> Courses</h1>
             <div class="services_section_2">
