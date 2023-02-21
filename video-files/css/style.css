@@ -4,6 +4,7 @@ body{
 	line-height: 1.5;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
+	background-color: #222222;
 }
 body.hidden-scrolling{
 	overflow-y: hidden;
@@ -28,13 +29,13 @@ a{
 .header{
 	position: absolute;
 	width: 100%;
-	left:0;
-	top:0;
+	left: 65px;;
+	top: -70px;;
 	z-index: 99;
-	padding: 15px;
+	padding: 70px;
 }
 .header-main{
-	background-color: #05050500;
+	background-color: #00000033;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -42,7 +43,7 @@ a{
 	border-radius: 4px;
 }
 .header .logo{
-	padding: 0 195px;
+	padding: 0 15px;
 }
 .header .logo a{
 	font-size: 30px;
@@ -169,7 +170,7 @@ a{
 }
 .header .close-nav-menu{
 	height: 40px;
-	width: 100px;
+	width: 40px;
 	background-color: #00000000;
 	margin:0 0 15px 15px;
 	cursor: pointer;
@@ -198,7 +199,7 @@ a{
 	width: 100%;
 	display: block;
 	min-height: 100vh;
-	background-color: #222222;
+	
 	background-position: center top;
 	background-size: cover;
 }
@@ -285,14 +286,14 @@ body {
   /* Fixed sidenav, full height */
   .sidenav {
 	height: 100%;
-	width: 200px;
+	width: 135px;
 	position: fixed;
 	z-index: 1;
 	top: 0;
 	left: 0;
 	background-color: #111;
 	overflow-x: hidden;
-	padding-top: 20px;
+	padding-top: 55px;
   }
   
   /* Style the sidenav links and the dropdown button */
@@ -345,7 +346,4 @@ body {
   @media screen and (max-height: 450px) {
 	.sidenav {padding-top: 15px;}
 	.sidenav a {font-size: 18px;}
-	.open-nav-menu{
-		padding-left: 20px;
-	}
   }
