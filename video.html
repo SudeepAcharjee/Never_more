@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dropdown Menu Responsive</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./video-files/css/style.css">
+</head>
+<body>
+
+  <!-- header start -->
+  <header class="header">
+     <div class="container">
+        <div class="header-main">
+           <div class="logo">
+              <a href="#">Video</a>
+           </div>
+           <div class="open-nav-menu">
+              <span></span>
+           </div>
+           <div class="menu-overlay">
+           </div>
+           <!-- navigation menu start -->
+           <nav class="nav-menu">
+             <div class="close-nav-menu">
+                <img src="./video-files/img/close.svg" alt="close">
+             </div>
+             <ul class="menu">
+                
+                <li class="menu-item">
+                   <a href="#">Home</a>
+                </li>
+                <li class="menu-item">
+                   <a href="#">Log-Out</a>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                   <a href="#" data-toggle="sub-menu">Web-basics<i class="plus"></i></a>
+                   <ul class="sub-menu">
+                       <li class="menu-item"><a href="#">Basics Of Internet</a></li>
+                       <li class="menu-item"><a href="#">How It works</a></li>
+                       <li class="menu-item"><a href="#">HTTPS Explained</a></li>
+                       <li class="menu-item"><a href="#">Server</a></li>
+                   </ul>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu">Front-End<i class="plus"></i></a>
+                  <ul class="sub-menu">
+                      <li class="menu-item"><a href="#">Home 1</a></li>
+                      <li class="menu-item"><a href="#">Home 2</a></li>
+                      <li class="menu-item"><a href="#">Home 3</a></li>
+                      <li class="menu-item"><a href="#">Home 4</a></li>
+                  </ul>
+               </li>
+               <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu">Back-End<i class="plus"></i></a>
+                  <ul class="sub-menu">
+                      <li class="menu-item"><a href="#">Home 1</a></li>
+                      <li class="menu-item"><a href="#">Home 2</a></li>
+                      <li class="menu-item"><a href="#">Home 3</a></li>
+                      <li class="menu-item"><a href="#">Home 4</a></li>
+                  </ul>
+               </li>
+             </ul>
+           </nav>
+           <!-- navigation menu end -->
+        </div>
+     </div>
+  </header>
+  <!-- header end -->
+  <div class="sidenav">
+   <a href="#about">About</a>
+   <a href="#services">Services</a>
+   <a href="#clients">Clients</a>
+   <a href="#contact">Contact</a>
+   <button class="dropdown-btn">Dropdown 
+     <i class="fa fa-caret-down"></i>
+   </button>
+   <div class="dropdown-container">
+     <a href="#">Link 1</a>
+     <a href="#">Link 2</a>
+     <a href="#">Link 3</a>
+   </div>
+ <!-- home section start -->
+ <section class="home-section">
+ </section>
+ <!-- home section end -->
+ 
+<script src="./video-files/js/script.js"></script>
+<script>
+   /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+   var dropdown = document.getElementsByClassName("dropdown-btn");
+   var i;
+   
+   for (i = 0; i < dropdown.length; i++) {
+     dropdown[i].addEventListener("click", function() {
+       this.classList.toggle("active");
+       var dropdownContent = this.nextElementSibling;
+       if (dropdownContent.style.display === "block") {
+         dropdownContent.style.display = "none";
+       } else {
+         dropdownContent.style.display = "block";
+       }
+     });
+   }
+   </script>
+</body>
+</html>
