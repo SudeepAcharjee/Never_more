@@ -347,3 +347,13 @@ body {
 	.sidenav {padding-top: 15px;}
 	.sidenav a {font-size: 18px;}
   }
+  iframe{
+           align-self: auto;
+		
+	position: absolute;
+    top: 66px;
+    left: 136px;
+    width: 90%;
+    height: 100%;
+    border: 0;
+  }
