@@ -58,12 +58,13 @@ a{
 	display: inline-block;
 	margin-left: 30px;
 	position: relative;
+	color: #ffffff;
 }
 .header .menu > .menu-item > a{
 	display: block;
 	padding: 12px 0;
 	font-size: 16px;
-	color: #000000;
+	color: #faf1f1;
 	text-transform: capitalize;
 	font-weight: 600;
 	transition: all 0.3s ease;
@@ -83,7 +84,7 @@ a{
 	box-sizing: border-box;
 	left: 50%;
 	top:50%;
-	background-color: #000000;
+	background-color: #fffcfc;
 	height: 2px;
 	width: 100%;
 	transform: translate(-50%,-50%);
