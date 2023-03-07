@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <title> Never-More</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+  <!-- header start -->
+  <header class="header">
+     <div class="container">
+        <div class="header-main">
+           <div class="logo">
+            <div id="mySidebar" class="sidebar">
+               <div class="sidenav">
+                   <button class="dropdown-btn">Basics +
+                       <i class="fa fa-caret-down"></i>
+                     </button>
+                     <div class="dropdown-container">
+                       <a href="#">Link 1</a>
+                       <a href="#">Link 2</a>
+                       <a href="#">Link 3</a>
+                     </div> <button class="dropdown-btn">HTTP +
+                     <i class="fa fa-caret-down"></i>
+                   </button>
+                   <div class="dropdown-container">
+                     <a href="#">Link 1</a>
+                     <a href="#">Link 2</a>
+                     <a href="#">Link 3</a>
+                     </div>
+                        <button class="dropdown-btn">How? +
+                     <i class="fa fa-caret-down"></i>
+                   </button>
+                   <div class="dropdown-container">
+                     <a href="#">Link 1</a>
+                     <a href="#">Link 2</a>
+                     <a href="#">Link 3</a>
+                   </div>
+                  
+                 </div>
+             </div>
+             
+           </div>
+           <div class="open-nav-menu">
+              <span></span>
+           </div>
+           <div class="menu-overlay">
+           </div>
+           <!-- navigation menu start -->
+           <nav class="nav-menu">
+             <div class="close-nav-menu">
+                <img src="./videofiles/img/close.svg" alt="close">
+             </div>
+             <ul class="menu">
+                
+                <li class="menu-item">
+                   <a href="../home(after-login).html">Home</a>
+                </li>
+                <li class="menu-item">
+                   <a href="../index.html">Log-Out</a>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                   <a href="#" data-toggle="sub-menu">Web-basics<i class="plus"></i></a>
+                   <ul class="sub-menu">
+                       <li class="menu-item"><a href="#">Basics Of Internet</a></li>
+                       <li class="menu-item"><a href="#">How It works</a></li>               
+                       <li class="menu-item"><a href="#">HTTPS Explained</a></li>
+                       <li class="menu-item"><a href="#">Server</a></li>
+                       
+                   </ul>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu">Front-End<i class="plus"></i></a>
+                  <ul class="sub-menu">
+                      <li class="menu-item"><a href="#">HTML</a></li>
+                      <li class="menu-item"><a href="#">CSS</a></li>
+                      <li class="menu-item"><a href="#">JavaScript</a></li>
+                      <li class="menu-item"><a href="#">GIT</a></li>
+                      <li class="menu-item"><a href="#">Git Hub</a></li>
+                      <li class="menu-item"><a href="#">SCSS</a></li>
+                      <li class="menu-item"><a href="#">Frame Work</a></li>
+                      <li class="menu-item"><a href="#">GIT</a></li>
+                      <li class="menu-item"><a href="#">More</a></li>
+                  </ul>
+               </li>
+               <li class="menu-item menu-item-has-children">
+                  <a href="#" data-toggle="sub-menu">Back-End<i class="plus"></i></a>
+                  <ul class="sub-menu">
+                      <li class="menu-item"><a href="#">Relational Database</a></li>
+                      <li class="menu-item"><a href="#">NoSQL</a></li>
+                      <li class="menu-item"><a href="#">MySQL</a></li>
+                      <li class="menu-item"><a href="#">PHP</a></li>
+                      <li class="menu-item"><a href="#">More</a></li>
+                  </ul>
+               </li>
+             </ul>
+           </nav>
+           <!-- navigation menu end -->
+        </div>
+     </div>
+  </header>
+  <iframe width="250" height="250" src="https://www.youtube.com/embed/YtxLexm-9pI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+  <!-- header end -->
+  <div class="sidenav">
+   <a href="#about">Video1</a>
+   <a href="#services">Video2</a>
+   <a href="#clients">Video3</a>
+   <a href="#contact">Video4</a>
+   <button class="dropdown-btn">More
+     <i class="fa fa-caret-down"></i>
+   </button>
+   <div class="dropdown-container">
+     <a href="#">Link 1</a>
+     <a href="#">Link 2</a>
+     <a href="#">Link 3</a>
+   </div>
+ <!-- home section start -->
+ 
+ <!-- home section end -->
+ 
+<script src="js/script.js"></script>
+<script>
+   /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+   var dropdown = document.getElementsByClassName("dropdown-btn");
+   var i;
+   
+   for (i = 0; i < dropdown.length; i++) {
+     dropdown[i].addEventListener("click", function() {
+       this.classList.toggle("active");
+       var dropdownContent = this.nextElementSibling;
+       if (dropdownContent.style.display === "block") {
+         dropdownContent.style.display = "none";
+       } else {
+         dropdownContent.style.display = "block";
+       }
+     });
+   }
+   </script>
+</body>
+</html>
