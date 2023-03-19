@@ -1,5 +1,4 @@
-
-
+prompt="Hi"
 (() =>{
  
   const openNavMenu = document.querySelector(".open-nav-menu"),
