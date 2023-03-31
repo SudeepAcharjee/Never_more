@@ -102,7 +102,7 @@ body {
 
 .navigation .menuToggle::after {
   content: "";
-  position: absolute;
+  position: fixed;
   width: 32px;
   height: 2px;
   background: #555;
@@ -148,4 +148,7 @@ body {
 
 .menu li a ion-icon {
   font-size: 1.5em;
+}
+html {
+  scroll-behavior: smooth;
 }
