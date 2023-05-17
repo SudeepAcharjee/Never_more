@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+ 
+    <link rel="stylesheet" type="text/css" href="login.css" />
+    <script src="login.js"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <!-- site metas -->
+    <title>Never-More</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- owl carousel style -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css"
+    />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+    <!-- Tweaks for older IEs-->
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- owl stylesheets -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen"
+    />
+  </head>
+  <body>
+    <div class="header_section">
+      <div class="header_bg">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="logo" href="../index.html"
+              ><img src="./images/log-removebg-preview.png"
+            /></a>
+            <div
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                  <a class="nav-link" href=".//login/login page.html">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Log-out</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/videos.html">Videos</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="mailto:sudeepacharjee@gmail.com"
+                    >Contact</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Courses</a>
+                </li>
+              </ul>
+              <div class="call_section">
+                <ul>
+                  <li>
+                    <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADGUlEQVR4nO2Y24tNURzHP4aOS00ZEyM8i3GJGXlQLk8kt/DAEw+i5k3UuJQX+QMw5smkXPJAIY08umZQBgfFFDKDTMYIQw5mllb9Tu322WvvtdfZZ2y1v/WtmX3W7/v7ffdee+21fpAhQ4YMGf4zTAd2AMeBTuArcB0YYRGrx1yTmE7R0Fpac1gwFTgAdAHKwwJwGzgC1FjojAcOS0zBp/VCcuhciWMScAz46Umo/z4LrAeqy9CuFg2t5ddvldyJYDXQ60nQD+wFan3jZgPbgBagHXgmY/8I++Vau4zRY2f5NGpFu9+Tr1dqKAuLgF8e0Rbf1Fkgd63bNz3isFuedqNHt0aueZ/OQlcTI+UOFsV+Azn5bQVwv4ziTbwHLJccOXmSxd8eAlUuRrYEJNIrzc0KGPDzFnAj4PomFyP5YSg4LjvjmliSgqKVgbHeldMpKFgZ2GZrYgzwJQUFKwM/A6NtjGxIQbEqgmtsjJxJQaEqgiejTFT5vuJp5YeozWlDCopUlpwbZmSPg+AdYJ68gPOBjgrFKB93hxm5HFPskWfbUoT+/3HCMSqAF8KMvE9o9ViXcIwKYI/JxDSHx2s6K0xMOEYZOCVIaK2DUJ2hqLqEY5SBgeeUXQ5C2nzcaeISowzcGSTU6iBkenHzCccoA/VBrwRXHYSULJ0NskfTp7y7FYpRAbwSZOSpo9i/ZD7IyJsUFKZi8nWQkU8hAUNyZh4cxiIH5SM5FDKmL8iIv1Hmpe4EaiwNaM5Vgl3AMsnZFjJO11yCByEBT4DJMm6UtDd7KmCgB9guOZCcYe+urrkEM4GBkKCP0lkpbp/1hm8jcCkiLorfgItyoMuJts6xVaZOWNwMDFhlUVRe2jLeHlNOpkIzcEKW15dSSEHYJ9c6ZEyzTNWcr5e22eKbok2sJAKNshpE3cm3wFFgsWvjTFAlXRut9c4i7yv5BllhHHAI+G4h/AOoL8NIvWhE5dEz5SAw1iWJbirvl1a/KUET5aMpRP85sA+YQEKYI5u087K+D9g0AWLglGhq7XOSS3f4M2TIkCFDhgxY4i+D3DCoZ+v6igAAAABJRU5ErkJggg=="  height="15px" width="30px"></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="images/twitter-icon.png" ></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="images/linkedin-icon.png" ></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="images/instagram-icon.png" ></a>
+                  </li>
+                  <div class="donate_bt">
+                    <a href="#"><img src="images/search-icon.png" ></a>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div>
+        <h1>What is Never-More?</h1>
+        <p>
+        We create simplified and interactive learning experiences. Learning web
+        development should be easy to understand and available for everyone,
+        everywhere! Never-More is a school for web developers, covering all the
+        aspects of web development: HTML Tutorial CSS Tutorial JavaScript Tutorial
+        PHP Tutorial SQL Tutorial Python Tutorial Java Tutorial C Tutorial C++
+        Tutorial C# Tutorial R Tutorial Bootstrap Tutorial jQuery Tutorial React
+        Tutorial XML Tutorial And Much More .</p>
+        <br />
+        <h1>Easy-Learning</h1>
+        <p>
+        Never-More has focus on simplicity. Never-More practice easy learning.
+        Never-More uses simple code examples and simple illustrations of how to
+        use it. Never-More' tutorials start from basic level and move all the way
+        up to professional references.</p>
+        <h1>Never-More is free</h1>
+        <p>        Never-More is, and will always be, a completely free developers resource.</p>
+        <h1>You can help</h1>
+        <p>
+        Many people work very hard to ensure Never-More remains useful, updated,
+        and interesting. If you find an error, or a broken link, please tell us
+        about it. Use the link "REPORT ERROR" at the bottom of each page.</p>
+        <h1>Terms of Service</h1>
+        <h2>Overview</h2>
+        <p>
+        The website and the solutions are operated and managed by separate
+        entities. References Data offers the website including all its content,
+        information, and related tools. The solutions (Such as Spaces, Courses,
+        and My learning) and billing system are operated by Never-More Network.
+        The two entities are separately responsible for the services that they
+        provide, manage and operate. Throughout the site, the terms "we", "us" and
+        "our" refer to References Data and Never-More Network. By visiting our
+        site and/or purchasing something from us, you engage in our "Service" and
+        agree to be bound by the following terms and conditions ("Terms of
+        Service", "Terms"), including those additional terms and conditions and
+        policies referenced herein and/or available by hyperlink. These Terms of
+        Service apply to all users of the site, including without limitation users
+        who are browsers, vendors, customers, merchants, and/or contributors of
+        content. Please read these Terms of Service carefully before accessing or
+        using our website or services. By accessing or using any part of the site,
+        you agree to be bound by these Terms of Service. If you do not agree to
+        all the terms and conditions of this agreement, then you may not access
+        the website or use any services. Any new features or tools which are added
+        to the current site shall also be subject to the Terms of Service. You can
+        review the most current version of the Terms of Service at any time on
+        this page. We reserve the right to update, change or replace any part of
+        these Terms of Service by posting updates and/or changes to our website.
+        It is your responsibility to check this page periodically for changes.
+        Your continued use of or access to the website following the posting of
+        any changes constitutes acceptance of those changes.</p>
+        <h1>Site Usage Terms</h1>
+        <p>
+        By agreeing to these Terms of Service, you represent that you are at least
+        the age of majority in your state or province of residence, or that you
+        are the age of majority in your state or province of residence and you
+        have given us your consent to allow any of your minor dependents to use
+        this site. Access to services may require you to register an account. This
+        could require you to provide information about yourself such as name,
+        email address and credit card details. The account information and the use
+        of data is subject to our Privacy Policy You may not use our products for
+        any illegal or unauthorized purpose nor may you, in the use of the
+        Service, violate any laws in your jurisdiction (including but not limited
+        to copyright laws). You are responsible for complying with any law, rules,
+        and regulations applicable to you. You must not transmit any worms or
+        viruses or any code of a destructive nature. A breach or violation of any
+        of our Terms can result in an immediate termination of your Services. We
+        reserve the right to remove or restrict your account and to remove content
+        such as websites and other user-created data at any time at our sole and
+        absolute discretion.
+        </p>
+        <h1>General Conditions</h1>
+        <p>
+        We reserve the right to refuse service to anyone for any reason at any
+        time. You understand that your content may be transferred unencrypted and
+        involve (a) transmissions over various networks, and (b) changes to
+        conform and adapt to technical requirements of connecting networks or
+        devices. Credit card information is always encrypted during transfer over
+        networks, and are processed and handled by our selected Payment Service
+        Providers. We only preserve the last four-digit and expiry date of your
+        Credit card. This is, among other things, to let you know in advance if
+        your Credit card is soon to expire, so that we can assure the continuous
+        running of your Services with us. You agree not to reproduce, duplicate,
+        copy, sell, resell or exploit any portion of the Service, use of the
+        Service, or access to the Service or any contact on the website through
+        which the service is provided, without express written permission by us.
+        The headings used in this agreement are included for convenience only and
+        will not limit or otherwise affect these Terms.</p>
+      </div>
+
+    <!-- footer section end -->
+    <!-- copyright section start -->
+    <div class="copyright_section">
+      <div class="container">
+        <p class="copyright_text">
+          ©2023 All Rights Reserved.
+          <a href="https://github.com/SudeepAcharjee">@SudeepAcharjee</a>
+        </p>
+      </div>
+    </div>
+    <!-- copyright section end -->
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- javascript -->
+    <script src="js/owl.carousel.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+  </body>
+</html>

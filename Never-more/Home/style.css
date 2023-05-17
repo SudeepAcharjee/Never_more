@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    font-family: poppins;
+    background-color: var(--primary-color);
+}
+
+.line-one {
+    position: fixed;
+    width: 25px;
+    height: 100vh;
+    background: #ff3131;
+    left: 23%;
+}
+
+.line-two {
+    position: fixed;
+    width: 25px;
+    height: 100vh;
+    background: #2b2828;
+    left: 25%;}
+
+.line-1{
+    position: fixed;
+    width: 25px;
+    height: 100vh;
+    background: #5f08b1d0;
+    left: 20%;
+}
+
+.line-2{
+    position: fixed;
+    width: 25px;
+    height: 100vh;
+    background: #e9ae0a;
+    left: 28%;
+}
+
+nav {
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+    padding-right: 150px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff3131;
+    transition: width 0.4s;
+    
+        flex: 1;
+        text-align: right;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.logo {
+    position: fixed;
+    left: 120px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+
+.search {
+    position: fixed;
+    right: 160px;
+}
+
+.menu {
+    position: fixed;
+    right: 100px;
+}
+
+.img img {
+    position: relative;
+    width: 450px;
+    left: 8.5%;
+    top: -40px;
+}
+
+.title {
+    position: fixed;
+    position: absolute;
+    top: 276px;
+    left: 43%;
+    line-height: .5;
+    font-size: 100px;
+    font-weight: 700;
+    letter-spacing: 6px;
+    color: var(--secondary-color);
+}
+
+.title p {
+    font-size: 25px;
+    font-weight: 300;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    left: 150px;
+    letter-spacing: 10px;
+}
+
+.btn a {
+    position: relative;
+    text-decoration: none;
+    bottom: 0px;
+    right: -57%;
+    text-transform: uppercase;
+    background: #ff3131;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: .4s;
+}
+
+.btn a:hover {
+    background: #000;
+    color: #fff;
+}
+
+.year {
+    font-weight: 700;
+    position: fixed;
+    top: 556px;
+    left: 0px;
+    padding: 10px 30px;
+    color: var(--secondary-color);
+}
+
+.media ul {
+    list-style: none;
+    position: fixed;
+    right: 20px;
+    top: 63%;
+    padding: 10px 10px;
+}
+
+.media ul li {
+    cursor: pointer;
+    font-size: 18px;
+    margin: 24px 0;
+    transition: .3s;
+    color: var(--secondary-color);
+}
+
+.media ul li:hover {
+    transform: scale(1.8);
+}
+/* dark mode */
+#icon1{
+    width: 30px;
+    cursor: pointer;
+    padding-right: 10%;
+    margin: 20px 0;
+}
+#nav ul{
+    flex: 1;
+    text-align: right;
+}
+.dark-theme{
+    --primary-color: rgba(0, 0, 0, 0.918);
+    --secondary-color: #ffffff;
+}
+:root{
+    --primary-color: #fff;
+    --secondary-color: black;
+
+}
+/* Respnsiveness */
+@media only screen and (min-width: 1000px) and (max-width: 1350px)
+{
+ .logo{
+    left: 45px;
+ }   
+ nav ul {
+    padding-right: 0px;
+}
+#icon1{
+    padding-right: 5px;
+}
+
+.img img {
+    top: 150px;
+}
+.title{
+    font-size: 70px;
+    padding-left: 13%;
+    letter-spacing: -2px;
+    padding-top: 13%;
+}
+.year{
+    top: 90%;
+}
+.media ul{
+    top: 80%;
+}
+.btn a{
+    bottom: 0px;
+}
+}
+@media only screen and (min-width: 1000px) and (max-width: 1250px){
+    .img img {
+        position: relative;
+        width: 350px;
+        left: 8.5%;
+        top: -30px;
+    }
+    .stripes{
+        padding-left: 20px;
+    }
+}
